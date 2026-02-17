@@ -1,5 +1,9 @@
 import joblib
+import sys
 import os
+
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+
 from sklearn.linear_model import LinearRegression, Ridge
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import (
@@ -74,7 +78,7 @@ def train_and_compare(path):
 
 if __name__ == "__main__":
 
-    data_path = "../data/Melbourne_housing_FULL.csv"
+    data_path = "data/Melbourne_housing_FULL.csv"
 
     scores = train_and_compare(data_path)
 

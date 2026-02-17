@@ -2,7 +2,7 @@ import joblib
 import pandas as pd
 
 
-MODEL_PATH = "../models/random_forest_model.pkl"
+MODEL_PATH = "models/random_forest_model.pkl"
 
 
 def predict_price(input_data):
